@@ -1,57 +1,22 @@
-/* estilo.css - reglas básicas y simples */
-
-
 /* Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
+    font-family: "Roboto", sans-serif;;
     color: #222;
 }
 
 
-/* Header con imagen de fondo con opacidad 0.6 usando pseudo-elemento */
-.site-header {
-    position: relative;
-    padding: 40px 20px;
-    color: #fff;
-    overflow: hidden;
-}
-
-.site-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url('images/tabla1.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.6;
-    /* imagen con opacidad 0.6 */
-    z-index: 0;
-}
-
-.site-header .header-content {
-    position: relative;
-    z-index: 1;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.site-header.small {
-    padding: 20px 10px;
-}
-
 /* Navegación simple */
 .main-nav ul {
-    list-style: none;
+
     text-align: center;
     position: relative;
-    z-index: 1;
     margin-bottom: 10px;
 }
 
