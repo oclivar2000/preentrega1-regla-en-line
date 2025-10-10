@@ -1,150 +1,154 @@
 /* Reinicio básico para evitar márgenes por defecto */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilo general del header */
 header {
-  background-color: #333; /* fondo oscuro */
-  padding: 15px 0;
+    background-color: #333;
+    /* fondo oscuro */
+    padding: 15px 0;
 }
 
 /* Centrar el contenido del menú */
 nav ul {
-  list-style: none;           /* elimina los puntos de la lista */
-  display: flex;              /* coloca los elementos en línea */
-  justify-content: center;    /* centra el menú horizontalmente */
-  gap: 40px;                  /* espacio entre los elementos */
+    list-style: none;
+    /* elimina los puntos de la lista */
+    display: flex;
+    /* coloca los elementos en línea */
+    justify-content: center;
+    /* centra el menú horizontalmente */
+    gap: 40px;
+    /* espacio entre los elementos */
 }
 
 /* Estilo de los enlaces del menú */
 nav ul li a {
-  text-decoration: none;  /* elimina el subrayado */
-  color: white;           /* color del texto */
-  font-size: 18px;        /* tamaño de letra */
-  font-family: Arial, sans-serif;
-  transition: color 0.3s ease; /* animación al pasar el mouse */
+    text-decoration: none;
+    /* elimina el subrayado */
+    color: white;
+    /* color del texto */
+    font-size: 18px;
+    /* tamaño de letra */
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+    /* animación al pasar el mouse */
 }
 
 
 /* Estilo general del main */
 main {
-  background-image: url("img/tabla1.jpg"); /* fondo con imagen */
-  background-size: cover;       /* la imagen cubre todo el ancho */
-  background-position: center;  /* centra la imagen */
-  position: relative;
-  height: 400px;                /* altura del área principal */
-  display: flex;
-  justify-content: center;      /* centra horizontalmente */
-  align-items: center;          /* centra verticalmente */
-  color: white;                 /* color del texto */
+    background-image: url("tabla1.jpeg");
+    /* fondo con imagen */
+    background-size: cover;
+    /* la imagen cubre todo el ancho */
+    background-position: center;
+    /* centra la imagen */
+    height: 400px;
+    /* altura del área principal */
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+    color: rgb(90, 28, 172);
+    /* color del texto */
 }
 
-/* Capa semitransparente sobre la imagen */
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* opacidad 0.6 */
-  z-index: 1;
-}
 
 /* Contenido dentro del main */
 .header-content {
-  position: relative; /* para que esté sobre la capa oscura */
-  text-align: center;
-  max-width: 700px;
-  padding: 20px;
-  z-index: 2;
+    position: relative;
+    /* para que esté sobre la capa oscura */
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
 }
 
 /* Título principal */
 .header-content h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Párrafo descriptivo */
 .header-content p {
-  font-size: 18px;
-  line-height: 1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Sección "¿Por qué elegir nuestra app?" */
 .por-que {
-  padding: 60px 20px;
-  background-color: #f9f9f9; /* fondo claro */
-  text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    /* fondo claro */
+    text-align: center;
 }
 
 /* Título de la sección */
 .por-que h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #333;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Contenedor de las tarjetas */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* diseño responsivo */
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* diseño responsivo */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Cada tarjeta */
 .card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 25px 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efecto al pasar el mouse */
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Iconos de cada tarjeta */
 .card .icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
 }
 
 /* Título dentro de la tarjeta */
 .card h3 {
-  font-size: 20px;
-  color: #222;
-  margin-bottom: 10px;
-  font-weight: 600;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 /* Texto descriptivo */
 .card p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* Estilo del pie de página */
 footer {
-  background-color: #333;      /* mismo tono oscuro que el header */
-  color: #fff;                 /* texto blanco */
-  text-align: center;          /* centra el texto */
-  padding: 20px 0;             /* espacio vertical */
-  font-size: 14px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 40px;            /* separación superior del contenido */
+    background-color: #333;
+    /* mismo tono oscuro que el header */
+    color: #fff;
+    /* texto blanco */
+    text-align: center;
+    /* centra el texto */
+    padding: 20px 0;
+    /* espacio vertical */
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 40px;
+    /* separación superior del contenido */
 }
