@@ -33,14 +33,12 @@ nav ul li a {
     font-size: 18px;
     /* tamaño de letra */
     font-family: Arial, sans-serif;
-    transition: color 0.3s ease;
-    /* animación al pasar el mouse */
 }
 
 
 /* Estilo general del main */
 main {
-    background-image: url("tabla1.jpeg");
+    background-image: url("tabla1.jpg");
     /* fondo con imagen */
     background-size: cover;
     /* la imagen cubre todo el ancho */
@@ -55,6 +53,7 @@ main {
     /* centra verticalmente */
     color: rgb(90, 28, 172);
     /* color del texto */
+    background-color: aquamarine;
 }
 
 
@@ -84,7 +83,7 @@ main {
 /* Sección "¿Por qué elegir nuestra app?" */
 .por-que {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: #8ce308;
     /* fondo claro */
     text-align: center;
 }
@@ -99,9 +98,10 @@ main {
 
 /* Contenedor de las tarjetas */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* diseño responsivo */
+     display: flex;
+    /* coloca los elementos en línea */
+    justify-content: center;
+    /* centra el menú horizontalmente */
     gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
@@ -112,7 +112,6 @@ main {
     background-color: #fff;
     border-radius: 12px;
     padding: 25px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Iconos de cada tarjeta */
