@@ -3,41 +3,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Estilo general del header */
+/* ====== MENÚ DE NAVEGACIÓN ====== */
 header {
-    background-color: #333;
-    /* fondo oscuro */
-    padding: 15px 0;
+  background-color: #333;
+  padding: 15px 0;
 }
 
-/* Centrar el contenido del menú */
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 nav ul {
-    list-style: none;
-    /* elimina los puntos de la lista */
-    display: flex;
-    /* coloca los elementos en línea */
-    justify-content: center;
-    /* centra el menú horizontalmente */
-    gap: 40px;
-    /* espacio entre los elementos */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
-/* Estilo de los enlaces del menú */
 nav ul li a {
-    text-decoration: none;
-    /* elimina el subrayado */
-    color: white;
-    /* color del texto */
-    font-size: 18px;
-    /* tamaño de letra */
-    font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  color: #ffcc00;
 }
+
 
 
 /* Estilo general del main */
 main {
+  margin-top: 20px;
     background-image: url("tabla1.jpg");
     /* fondo con imagen */
     background-size: cover;
@@ -70,14 +69,12 @@ main {
 .header-content h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    font-family: "Roboto", sans-serif;
 }
 
 /* Párrafo descriptivo */
 .header-content p {
     font-size: 18px;
     line-height: 1.6;
-    font-family: "Roboto", sans-serif;
 }
 
 /* Sección "¿Por qué elegir nuestra app?" */
@@ -135,6 +132,87 @@ main {
     color: #555;
     line-height: 1.5;
 }
+
+/* Pagina ofertas.html */
+.ofertas-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* ====== SECCIÓN DE OFERTAS ====== */
+/* .ofertas-list {
+    display: flex;
+    flex-direction: column;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+} */
+
+.ofertas-list {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.producto h3 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  font-size: 16px;
+  color: #555;
+}
+
+.producto strong {
+  color: #e67e22; /* tono naranja para destacar ofertas */
+}
+
+/* ====== LISTAS ====== */
+.ofertas-list div h3 {
+  font-size: 24px;
+  margin-top: 50px;
+  color: #222;
+}
+
+.ofertas-list div ol, ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* ol li, ul li {
+  margin-bottom: 10px;
+} */
 
 /* Estilo del pie de página */
 footer {
