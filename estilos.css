@@ -1,9 +1,9 @@
 /* Reinicio básico para evitar márgenes por defecto */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* ====== MENÚ DE NAVEGACIÓN ====== */
@@ -36,112 +36,114 @@ nav ul li a {
 
 /* Estilo general del main */
 main {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
-    background-image: url("tabla1.jpg");
-    /* fondo con imagen */
-    background-size: cover;
-    /* la imagen cubre todo el ancho */
-    background-position: center;
-    /* centra la imagen */
-    height: 400px;
-    /* altura del área principal */
-    display: flex;
-    justify-content: center;
-    /* centra horizontalmente */
-    align-items: center;
-    /* centra verticalmente */
-    color: rgb(90, 28, 172);
-    /* color del texto */
-    background-color: aquamarine;
+  background-image: url("tabla1.jpg");
+  /* fondo con imagen */
+  background-size: cover;
+  /* la imagen cubre todo el ancho */
+  background-position: center;
+  /* centra la imagen */
+  height: 400px;
+  /* altura del área principal */
+  /* display: flex; */
+  justify-content: center;
+  /* centra horizontalmente */
+  align-items: center;
+  /* centra verticalmente */
+  color: rgb(90, 28, 172);
+  /* color del texto */
+  background-color: aquamarine;
 }
 
 
 /* Contenido dentro del main */
 .header-content {
-    position: relative;
-    /* para que esté sobre la capa oscura */
-    text-align: center;
-    max-width: 700px;
-    padding: 20px;
+  position: relative;
+  /* para que esté sobre la capa oscura */
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
 }
 
 /* Título principal */
 .header-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 /* Párrafo descriptivo */
 .header-content p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* Sección "¿Por qué elegir nuestra app?" */
 .por-que {
-    padding: 60px 20px;
-    background-color: #8ce308;
-    /* fondo claro */
-    text-align: center;
+  padding: 60px 20px;
+  background-color: #8ce308;
+  /* fondo claro */
+  text-align: center;
 }
 
 /* Título de la sección */
 .por-que h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #333;
-    font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Contenedor de las tarjetas */
 .cards {
-     display: flex;
-    /* coloca los elementos en línea */
-    justify-content: center;
-    /* centra el menú horizontalmente */
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  /* coloca los elementos en línea */
+  justify-content: center;
+  /* centra el menú horizontalmente */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Cada tarjeta */
 .card {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 25px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
 }
 
 /* Iconos de cada tarjeta */
 .card .icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
 }
 
 /* Título dentro de la tarjeta */
 .card h3 {
-    font-size: 20px;
-    color: #222;
-    margin-bottom: 10px;
-    font-weight: 600;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 /* Texto descriptivo */
 .card p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* Pagina ofertas.html */
 .ofertas-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
 /* ====== SECCIÓN DE OFERTAS ====== */
@@ -167,7 +169,7 @@ main {
   background-color: #fff;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -191,7 +193,8 @@ main {
 }
 
 .producto strong {
-  color: #e67e22; /* tono naranja para destacar ofertas */
+  color: #e67e22;
+  /* tono naranja para destacar ofertas */
 }
 
 /* ====== LISTAS ====== */
@@ -201,7 +204,8 @@ main {
   color: #222;
 }
 
-.ofertas-list div ol, ul {
+.ofertas-list div ol,
+ul {
   text-align: left;
   max-width: 600px;
   margin: 20px auto;
@@ -216,16 +220,16 @@ main {
 
 /* Estilo del pie de página */
 footer {
-    background-color: #333;
-    /* mismo tono oscuro que el header */
-    color: #fff;
-    /* texto blanco */
-    text-align: center;
-    /* centra el texto */
-    padding: 20px 0;
-    /* espacio vertical */
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    margin-top: 40px;
-    /* separación superior del contenido */
+  background-color: #333;
+  /* mismo tono oscuro que el header */
+  color: #fff;
+  /* texto blanco */
+  text-align: center;
+  /* centra el texto */
+  padding: 20px 0;
+  /* espacio vertical */
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  /* separación superior del contenido */
 }

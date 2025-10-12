@@ -1,0 +1,190 @@
+/* --------------------------
+   Estilos generales
+--------------------------- */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* --------------------------
+   Header y navegación
+--------------------------- */
+header {
+  background-color: #b2f1d1;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: rgb(19, 18, 18);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* --------------------------
+   Contenido principal
+--------------------------- */
+.header-content {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #d4c8f3;
+}
+
+.header-content h1 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.header-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --------------------------
+   Sección “Por qué elegir”
+--------------------------- */
+.por-que {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgb(238, 211, 176);
+}
+
+.por-que h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+}
+
+.card img.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* --------------------------
+   Footer
+--------------------------- */
+footer {
+  background-color: #3c3c3c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* --------------------------
+   Sección  ofertas
+--------------------------- */
+main {
+ display: flex;
+    flex-direction: column;
+}
+
+.ofertas-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ofertas-list h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+/* --------------------------
+   Productos en flex
+--------------------------- */
+.ofertas-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+/* --------------------------
+   Listas informativas
+--------------------------- */
+.ofertas-list h3 {
+  margin-top: 50px;
+  color: #444;
+}
+
+ol, ul {
+  text-align: left;
+  max-width: 400px;
+  margin: 10px auto;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+
