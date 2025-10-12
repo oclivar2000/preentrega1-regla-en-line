@@ -124,6 +124,7 @@ main h2 {
 
 /* Contenedor de productos */
 .ofertas-list {
+  background-color: #d4c8f3;
   text-align: center;
   padding: 20px;
 }
@@ -157,6 +158,7 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(238, 211, 176);
 }
 
 .separacion-listas {
@@ -183,7 +185,8 @@ ul li {
   margin: 8px 0;
 }
 
-.lista-ol, .lista-ul {
+.lista-ol,
+.lista-ul {
   display: flex;
   justify-content: center;
   gap: 40px;
