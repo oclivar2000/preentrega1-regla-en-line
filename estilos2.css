@@ -16,7 +16,7 @@ header {
   padding: 15px 0;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ nav ul {
   gap: 30px;
 }
 
-nav a {
+header nav a {
   color: rgb(19, 18, 18);
   text-decoration: none;
   font-weight: 500;
@@ -114,77 +114,51 @@ footer {
 /* --------------------------
    Sección  ofertas
 --------------------------- */
-main {
- display: flex;
-    flex-direction: column;
-}
 
-.ofertas-list {
-  max-width: 1000px;
-  margin: 0 auto;
+/* Título principal */
+main h2 {
   text-align: center;
+  color: #5a3e1b;
+  margin-top: 20px;
 }
 
-.ofertas-list h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #444;
-}
-
-/* --------------------------
-   Productos en flex
---------------------------- */
+/* Contenedor de productos */
 .ofertas-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  text-align: center;
+  padding: 20px;
 }
 
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Cada producto */
 .producto {
-  background-color: white;
+  background-color: #fff8f0;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
-  width: 90%;
-  max-width: 400px;
+  padding: 15px;
+  width: 250px;
   text-align: center;
 }
 
 .product-img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
-.producto h3 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.producto p {
-  font-size: 0.95rem;
-  margin: 5px 0;
-}
-
-/* --------------------------
-   Listas informativas
---------------------------- */
-.ofertas-list h3 {
-  margin-top: 50px;
-  color: #444;
-}
-
+/* Listas */
 ol, ul {
   text-align: left;
-  max-width: 400px;
-  margin: 10px auto;
-  padding-left: 20px;
+  margin: 20px auto;
+  width: 60%;
 }
 
-li {
-  margin-bottom: 8px;
+ol li, ul li {
+  margin: 8px 0;
 }
-
 
