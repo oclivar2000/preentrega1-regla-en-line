@@ -204,29 +204,55 @@ ul li {
 .a-back-color {
   flex: 1;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   color: #1a1a1a;
 }
 
-.ayuda .parte1 {
+/* Sección superior (¿Necesitas ayuda?) */
+.parte1 {
   background-color: #d4c8f3;
+  padding: 30px 0;
+  margin: 0;
 }
 
+.parte1 h2 {
+  color: #1d00a2;
+  margin-bottom: 10px;
+}
+
+.parte1 p {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.parte1 ul {
+  list-style-type: disc;
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Sección inferior (Preguntas frecuentes) */
 .parte2 {
   background-color: rgb(238, 211, 176);
-  /* margin-top: 20px; */
+  padding: 30px 0;
+  margin: 0;
 }
 
-.ayuda .parte1 h2 {
-  color: #1d00a2;
+.parte2 h3 {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.ayuda p {
-  /* font-size: 16px; */
-  color: #333333
-}
-
-.parte1 ul,
 .parte2 ol {
-  text-align: center;
+  list-style-type: decimal;
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
