@@ -209,6 +209,7 @@ ul li {
 
 /* Sección superior (¿Necesitas ayuda?) */
 .parte1 {
+  height: 160px;
   background-color: #d4c8f3;
   padding: 30px 0;
   margin: 0;
@@ -227,6 +228,8 @@ ul li {
 
 /* Sección inferior (Preguntas frecuentes) */
 .parte2 {
+  height: 160px;
+
   background-color: rgb(238, 211, 176);
   /* padding: 30px 0; */
   margin: 0;
