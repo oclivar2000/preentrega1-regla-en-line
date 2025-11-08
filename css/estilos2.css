@@ -3,8 +3,14 @@
 /* --------------------------
 Tipografía y jerarquía
 --------------------------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2d2d2d;
+  background-color: #f8f9fa;
+}
+
 h1, h2, h3 {
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 h1 {
@@ -20,6 +26,65 @@ h1 {
 }
 
 /* --------------------------
+Hero principal (inicio)
+--------------------------- */
+.hero {
+  background: linear-gradient(to bottom right, #4b6043, #6b4dd6);
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* --------------------------
+Colores y variables globales
+--------------------------- */
+:root {
+  --base-font: 16px;
+  --accent: #6b4dd6;
+  --bg-parte1: #6b4dd6;
+  --bg-parte2: #EED3B0;
+}
+
+html {
+  font-size: var(--base-font);
+}
+
+/* --------------------------
+Navbar
+--------------------------- */
+.navbar-brand {
+  font-size: 1.3rem;
+}
+
+.nav-link:hover {
+  color: #6b4dd6 !important;
+}
+
+/* --------------------------
+Cards
+--------------------------- */
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  transition: transform .2s ease;
+}
+
+.card:hover i {
+  transform: scale(1.1);
+}
+
+/* --------------------------
 Footer
 --------------------------- */
 footer {
@@ -28,7 +93,40 @@ footer {
 }
 
 /* --------------------------
-Accesibilidad y mejoras
+Ayuda (estructura)
+--------------------------- */
+.body-ayuda {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.parte1 {
+  background-color: var(--bg-parte1);
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.parte2 {
+  background-color: var(--bg-parte2);
+  padding: 3rem 1rem;
+}
+
+/* --------------------------
+Botones
+--------------------------- */
+.btn-primary {
+  background-color: #6b4dd6;
+  border-color: #6b4dd6;
+}
+
+.btn-primary:hover {
+  background-color: #5840b8;
+  border-color: #5840b8;
+}
+
+/* --------------------------
+Accesibilidad y ajustes
 --------------------------- */
 img {
   max-width: 100%;
@@ -45,100 +143,20 @@ a:hover {
 }
 
 /* --------------------------
-Variables y ajustes tipográficos
---------------------------- */
-:root {
-  --base-font: 16px;
-  --accent: #6b4dd6;
-  --bg-parte1: #6b4dd6;
-  --bg-parte2: #EED3B0;
-}
-
-html {
-  font-size: var(--base-font);
-}
-
-@media (max-width:720px) {
-  :root {
-    --base-font: 15px;
-  }
-}
-
-@media (min-width:1400px) {
-  :root {
-    --base-font: 17px;
-  }
-}
-
-/* --------------------------
-Layout general
---------------------------- */
-.body-ayuda {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* --------------------------
-Estilos de secciones
---------------------------- */
-.parte1 {
-  background-color: var(--bg-parte1);
-  color: #fff;
-  padding: 2rem 1rem;
-}
-
-.parte2 {
-  background-color: var(--bg-parte2);
-  padding: 3rem 1rem;
-}
-
-.detallesylistas {
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-  align-items: center;
-}
-
-.header-content {
-  padding: calc(2rem + 2vw) 1rem;
-}
-
-/* --------------------------
-Botones y tarjetas
---------------------------- */
-.btn-primary {
-  background-color: #6b4dd6;
-  border-color: #6b4dd6;
-}
-
-.card {
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.card button {
-  transition: transform .12s;
-}
-
-.card button:active {
-  transform: scale(.98);
-}
-
-/* --------------------------
-Responsive (ajustes móviles)
+Responsive
 --------------------------- */
 @media (max-width:576px) {
   .navbar-brand {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    min-height: 50vh;
+    padding: 3rem 1rem;
   }
 
   .card {
     padding: 0.75rem;
-  }
-
-  .hero .btn {
-    width: 100%;
   }
 
   footer {
