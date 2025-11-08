@@ -27,6 +27,12 @@ h1 {
   opacity: .95;
 }
 
+.text-celeste-oscuro {
+  color: #007b9e;
+  /* celeste oscuro */
+}
+
+
 /* --------------------------
 Variables globales
 --------------------------- */
@@ -60,19 +66,6 @@ header {
 }
 
 /* --------------------------
-Hero principal (inicio)
---------------------------- */
-.hero {
-  background: linear-gradient(to bottom right, var(--bg-hero-start), var(--bg-hero-end));
-  color: white;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-/* --------------------------
 Cards
 --------------------------- */
 .card {
@@ -93,6 +86,15 @@ Cards
 
 .card:hover i {
   transform: scale(1.1);
+}
+
+/* === Imágenes fijas para igualar tamaños === */
+.img-fija {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* --------------------------
@@ -161,13 +163,12 @@ Responsive
     font-size: 1.1rem;
   }
 
-  .hero {
-    min-height: 50vh;
-    padding: 3rem 1rem;
-  }
-
   .card {
     padding: 0.75rem;
+  }
+
+  .img-fija {
+    height: 200px;
   }
 
   footer {
