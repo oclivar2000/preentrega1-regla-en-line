@@ -1,31 +1,31 @@
 /* === css/estilos2.css === */
-h1,
-h2,
-h3 {
-  line-height: 1.1
+
+/* --------------------------
+Tipografía y jerarquía
+--------------------------- */
+h1, h2, h3 {
+  line-height: 1.1;
 }
 
 h1 {
-  font-weight: 700
+  font-weight: 700;
 }
 
 .h5 {
-  font-weight: 600
+  font-weight: 600;
 }
 
 .lead {
-  opacity: .95
+  opacity: .95;
 }
-
 
 /* --------------------------
 Footer
 --------------------------- */
 footer {
   background: #3c3c3c;
-  color: #fff
+  color: #fff;
 }
-
 
 /* --------------------------
 Accesibilidad y mejoras
@@ -33,112 +33,117 @@ Accesibilidad y mejoras
 img {
   max-width: 100%;
   height: auto;
-  display: block
+  display: block;
 }
 
 a {
-  transition: opacity .12s
+  transition: opacity .12s;
 }
 
+a:hover {
+  opacity: 0.8;
+}
 
 /* --------------------------
-Propiedades avanzadas: variables, media queries y funciones CSS
+Variables y ajustes tipográficos
 --------------------------- */
-/* ajuste tipografico responsivo */
 :root {
-  --base-font: 16px
+  --base-font: 16px;
+  --accent: #6b4dd6;
+  --bg-parte1: #6b4dd6;
+  --bg-parte2: #EED3B0;
 }
 
 html {
-  font-size: var(--base-font)
+  font-size: var(--base-font);
 }
 
 @media (max-width:720px) {
   :root {
-    --base-font: 15px
+    --base-font: 15px;
   }
 }
 
 @media (min-width:1400px) {
   :root {
-    --base-font: 17px
+    --base-font: 17px;
   }
 }
 
-
-/* sub-grid-like layout para contenidos complejos */
-.detallesylistas {
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-  align-items: center
-}
-
-
-/* uso de calc() y clamp() */
-.header-content {
-  padding: calc(2rem + 2vw) 1rem
-}
-
-
 /* --------------------------
-Reglas específicas para compatibilidad con Bootstrap
-(sobrescribimos solo lo necesario)
---------------------------- */
-.btn-primary {
-  background-color: #6b4dd6;
-  border-color: #6b4dd6
-}
-
-
-/* --------------------------
-Estilos para ayuda.html (mantener consistencia)
+Layout general
 --------------------------- */
 .body-ayuda {
   display: flex;
   flex-direction: column;
-  min-height: 100vh
+  min-height: 100vh;
 }
 
+/* --------------------------
+Estilos de secciones
+--------------------------- */
 .parte1 {
-  background-color: var(--accent);
-  padding: 2rem
+  background-color: var(--bg-parte1);
+  color: #fff;
+  padding: 2rem 1rem;
 }
 
 .parte2 {
-  background-color: #EED3B0;
-  padding: 3rem
+  background-color: var(--bg-parte2);
+  padding: 3rem 1rem;
 }
 
+.detallesylistas {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  align-items: center;
+}
+
+.header-content {
+  padding: calc(2rem + 2vw) 1rem;
+}
 
 /* --------------------------
-Micro-interacciones
+Botones y tarjetas
 --------------------------- */
+.btn-primary {
+  background-color: #6b4dd6;
+  border-color: #6b4dd6;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
 .card button {
-  transition: transform .12s
+  transition: transform .12s;
 }
 
 .card button:active {
-  transform: scale(.98)
+  transform: scale(.98);
 }
 
-
 /* --------------------------
-Último recurso: media queries para ajustar layout en móviles
+Responsive (ajustes móviles)
 --------------------------- */
 @media (max-width:576px) {
   .navbar-brand {
-    font-size: 1.05rem
+    font-size: 1.05rem;
   }
 
   .card {
-    padding: 0.75rem
+    padding: 0.75rem;
   }
 
   .hero .btn {
-    width: 100%
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.9rem;
   }
 }
-
 
 /* fin de estilos */
