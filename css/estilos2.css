@@ -1,7 +1,7 @@
 /* === css/estilos2.css === */
 
 /* --------------------------
-Tipografía y jerarquía
+Tipografía y base
 --------------------------- */
 body {
   font-family: 'Roboto', sans-serif;
@@ -9,7 +9,9 @@ body {
   background-color: #f8f9fa;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2;
 }
 
@@ -26,26 +28,15 @@ h1 {
 }
 
 /* --------------------------
-Hero principal (inicio)
---------------------------- */
-.hero {
-  background: linear-gradient(to bottom right, #4b6043, #6b4dd6);
-  color: white;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-}
-
-/* --------------------------
-Colores y variables globales
+Variables globales
 --------------------------- */
 :root {
   --base-font: 16px;
   --accent: #6b4dd6;
   --bg-parte1: #6b4dd6;
   --bg-parte2: #EED3B0;
+  --bg-hero-start: #4b6043;
+  --bg-hero-end: #6b4dd6;
 }
 
 html {
@@ -55,12 +46,30 @@ html {
 /* --------------------------
 Navbar
 --------------------------- */
-.navbar-brand {
-  font-size: 1.3rem;
+header {
+  background-color: #EED3B0 !important;
+}
+
+.nav-link {
+  color: #2d2d2d !important;
+  transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #6b4dd6 !important;
+  color: var(--accent) !important;
+}
+
+/* --------------------------
+Hero principal (inicio)
+--------------------------- */
+.hero {
+  background: linear-gradient(to bottom right, var(--bg-hero-start), var(--bg-hero-end));
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------------
@@ -69,11 +78,13 @@ Cards
 .card {
   border-radius: 1rem;
   overflow: hidden;
-  transition: transform .2s ease;
+  transition: transform .2s ease, box-shadow .2s ease;
+  background-color: #fff;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .card i {
@@ -85,6 +96,19 @@ Cards
 }
 
 /* --------------------------
+Botones
+--------------------------- */
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: #5840b8;
+  border-color: #5840b8;
+}
+
+/* --------------------------
 Footer
 --------------------------- */
 footer {
@@ -93,7 +117,7 @@ footer {
 }
 
 /* --------------------------
-Ayuda (estructura)
+Secciones de ayuda
 --------------------------- */
 .body-ayuda {
   display: flex;
@@ -110,19 +134,6 @@ Ayuda (estructura)
 .parte2 {
   background-color: var(--bg-parte2);
   padding: 3rem 1rem;
-}
-
-/* --------------------------
-Botones
---------------------------- */
-.btn-primary {
-  background-color: #6b4dd6;
-  border-color: #6b4dd6;
-}
-
-.btn-primary:hover {
-  background-color: #5840b8;
-  border-color: #5840b8;
 }
 
 /* --------------------------
@@ -145,7 +156,7 @@ a:hover {
 /* --------------------------
 Responsive
 --------------------------- */
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .navbar-brand {
     font-size: 1.1rem;
   }
