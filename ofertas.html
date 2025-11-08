@@ -2,79 +2,107 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- link de tipografia -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos2.css">
-    <title>Tablas Gourmet - Ofertas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tablas Gourmet - Ofertas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="css/estilos2.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="ayuda.html">Ayuda</a></li>
+  <!-- HEADER -->
+  <header class="bg-success-subtle py-3 shadow-sm">
+    <nav class="container">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="index.html" class="nav-link text-dark fw-semibold">Inicio</a></li>
+        <li class="nav-item"><a href="ofertas.html" class="nav-link text-dark fw-semibold active">Ofertas</a></li>
+        <li class="nav-item"><a href="ayuda.html" class="nav-link text-dark fw-semibold">Ayuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="back-color py-5">
+    <div class="container text-center">
+      <h2 class="mb-4 fw-bold">Tablas disponibles</h2>
+
+      <!-- PRODUCTOS -->
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <article class="producto card h-100 border-0 shadow-sm">
+            <img src="images/tabla1.jpeg" alt="Tabla Clásica" class="card-img-top rounded-top">
+            <div class="card-body">
+              <h3 class="card-title">Tabla Clásica</h3>
+              <p class="card-text">Jamón, quesos, aceitunas y pan rústico.</p>
+              <p class="fw-bold">Precio: $12.990 <span class="text-danger">(30% OFF)</span></p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="producto card h-100 border-0 shadow-sm">
+            <img src="images/tabla2.jpeg" alt="Tabla Vegetariana" class="card-img-top rounded-top">
+            <div class="card-body">
+              <h3 class="card-title">Tabla Vegetariana</h3>
+              <p class="card-text">Hummus, vegetales asados, queso de cabra y frutos secos.</p>
+              <p class="fw-bold">Precio: $10.500</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="producto card h-100 border-0 shadow-sm">
+            <img src="images/tabla3.jpeg" alt="Tabla Gourmet" class="card-img-top rounded-top">
+            <div class="card-body">
+              <h3 class="card-title">Tabla Gourmet</h3>
+              <p class="card-text">Selección premium de quesos, charcutería y mermeladas artesanales.</p>
+              <p class="fw-bold">Precio: $18.990 <span class="text-danger">(Oferta por tiempo limitado)</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- DETALLES Y LISTAS -->
+      <section class="detallesylistas mt-5 p-4 rounded shadow-sm">
+        <h3 class="fw-bold mb-3">Detalles y listas</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <ol class="lista-ol text-start mx-auto">
+              <li>Pedido mínimo: 1 tabla.</li>
+              <li>Tiempo de preparación: 30-45 minutos.</li>
+              <li>Envíos dentro de la ciudad.</li>
+            </ol>
+          </div>
+          <div class="col-md-5">
+            <ul class="lista-ul text-start mx-auto">
+              <li>Opciones vegetarianas</li>
+              <li>Opciones sin gluten</li>
+              <li>Personalización bajo pedido</li>
             </ul>
-        </nav>
-    </header>
-    <main class="back-color">
-        <h2>Tablas disponibles</h2>
-        <section class="ofertas-list">
-            <div class="productos">
-                <article class="producto">
-                    <img src="images/tabla1.jpeg" alt="Tabla Clásica" class="product-img">
-                    <h3>Tabla Clásica</h3>
-                    <p>Jamón, quesos, aceitunas y pan rústico.</p>
-                    <p>Precio: $12.990 <strong>(30% OFF)</strong></p>
-                </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
-                <article class="producto">
-                    <img src="images/tabla2.jpeg" alt="Tabla Vegetariana" class="product-img">
-                    <h3>Tabla Vegetariana</h3>
-                    <p>Hummus, vegetales asados, queso de cabra y frutos secos.</p>
-                    <p>Precio: $10.500</p>
-                </article>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 Tablas Gourmet App. Todos los derechos reservados.</p>
+  </footer>
 
-                <article class="producto">
-                    <img src="images/tabla3.jpeg" alt="Tabla Gourmet" class="product-img">
-                    <h3>Tabla Gourmet</h3>
-                    <p>Selección premium de quesos, charcutería y mermeladas artesanales.</p>
-                    <p>Precio: $18.990 <strong>(Oferta por tiempo limitado)</strong></p>
-                </article>
-            </div>
-            <div class="detallesylistas">
-                <h3>Detalles y listas</h3>
-                <div class="separacion-listas">
-                    <div>
-                        <ol  class="lista-ol">
-                            <li>Pedido mínimo: 1 tabla.</li>
-                            <li>Tiempo de preparación: 30-45 minutos.</li>
-                            <li id="enviosDentroCiudad">Envíos dentro de la ciudad.</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ul  class="lista-ul">
-                            <li>Opciones vegetarianas</li>
-                            <li>Opciones sin gluten</li>
-                            <li>Personalización bajo pedido</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>© 2025 Tablas Gourmet App. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Bootstrap JS (necesario para que el layout funcione correctamente) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

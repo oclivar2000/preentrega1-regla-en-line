@@ -1,238 +1,144 @@
-/* --------------------------
-   Estilos generales
---------------------------- */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #fafafa;
-  color: #333;
+/* === css/estilos2.css === */
+h1,
+h2,
+h3 {
+  line-height: 1.1
 }
 
-/* --------------------------
-   Header y navegación
---------------------------- */
-header {
-  background-color: #b2f1d1;
-  padding: 15px 0;
+h1 {
+  font-weight: 700
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+.h5 {
+  font-weight: 600
 }
 
-header nav a {
-  color: rgb(19, 18, 18);
-  text-decoration: none;
-  font-weight: 500;
+.lead {
+  opacity: .95
 }
 
 
 /* --------------------------
-   Contenido principal
---------------------------- */
-.header-content {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #d4c8f3;
-}
-
-.header-content h1 {
-  margin-bottom: 10px;
-  font-size: 2.2rem;
-}
-
-.header-content p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* --------------------------
-   Sección “Por qué elegir”
---------------------------- */
-.por-que {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: rgb(238, 211, 176);
-}
-
-.por-que h2 {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  color: #444;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  width: 280px;
-  text-align: center;
-}
-
-.card img.icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* --------------------------
-   Footer
+Footer
 --------------------------- */
 footer {
-  background-color: #3c3c3c;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-  font-size: 0.9rem;
+  background: #3c3c3c;
+  color: #fff
 }
+
 
 /* --------------------------
-   Sección  ofertas
+Accesibilidad y mejoras
 --------------------------- */
-
-/* Título principal */
-main h2 {
-  text-align: center;
-  /* margin-top: 20px; */
-}
-
-/* Contenedor de productos */
-.ofertas-list {
-  text-align: center;
-  padding: 20px;
-}
-
-.back-color {
-  background-color: #d4c8f3;
-}
-
-.productos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Cada producto */
-.producto {
-  background-color: #fff8f0;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px;
-  text-align: center;
-}
-
-.product-img {
-  width: 100%;
+img {
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  display: block
 }
 
+a {
+  transition: opacity .12s
+}
+
+
+/* --------------------------
+Propiedades avanzadas: variables, media queries y funciones CSS
+--------------------------- */
+/* ajuste tipografico responsivo */
+:root {
+  --base-font: 16px
+}
+
+html {
+  font-size: var(--base-font)
+}
+
+@media (max-width:720px) {
+  :root {
+    --base-font: 15px
+  }
+}
+
+@media (min-width:1400px) {
+  :root {
+    --base-font: 17px
+  }
+}
+
+
+/* sub-grid-like layout para contenidos complejos */
 .detallesylistas {
-  background-color: rgb(238, 211, 176);
-  margin-top: 15px;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: .75rem;
+  align-items: center
 }
 
-.separacion-listas {
-  align-items: center;
-  border: 2px solid #ddd;
-  padding: 15px;
-  border-radius: 10px;
-  /* background-color: #f9f9f9; */
-  width: 80%;
-  display: flex;
-  flex-direction: column;
+
+/* uso de calc() y clamp() */
+.header-content {
+  padding: calc(2rem + 2vw) 1rem
 }
 
-/* Listas */
-ol,
-ul {
-  /* text-align: left;
-  margin: 20px auto;
-  width: 60%; */
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+
+/* --------------------------
+Reglas específicas para compatibilidad con Bootstrap
+(sobrescribimos solo lo necesario)
+--------------------------- */
+.btn-primary {
+  background-color: #6b4dd6;
+  border-color: #6b4dd6
 }
 
-ol li,
-ul li {
-  margin: 8px 0;
-}
 
-/* ==== ESTILOS PARA AYUDA.HTML ==== */
-
+/* --------------------------
+Estilos para ayuda.html (mantener consistencia)
+--------------------------- */
 .body-ayuda {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh
 }
 
-.a-back-color {
-  flex: 1;
-  text-align: center;
-  color: #1a1a1a;
-}
-
-/* Sección superior (¿Necesitas ayuda?) */
 .parte1 {
-  height: 160px;
-  background-color: #d4c8f3;
-  padding: 30px 0;
-  margin: 0;
-  /* height: 70%; */
+  background-color: var(--accent);
+  padding: 2rem
 }
 
-.parte1 h2 {
-  color: #333333;
-  /* margin-bottom: 10px; */
-}
-
-.parte1 p {
-  color: #333333;
-  /* margin-bottom: 20px; */
-}
-
-/* Sección inferior (Preguntas frecuentes) */
 .parte2 {
-  height: 160px;
-
-  background-color: rgb(238, 211, 176);
-  /* padding: 30px 0; */
-  margin: 0;
-  padding: 100px 0;
-
+  background-color: #EED3B0;
+  padding: 3rem
 }
+
+
+/* --------------------------
+Micro-interacciones
+--------------------------- */
+.card button {
+  transition: transform .12s
+}
+
+.card button:active {
+  transform: scale(.98)
+}
+
+
+/* --------------------------
+Último recurso: media queries para ajustar layout en móviles
+--------------------------- */
+@media (max-width:576px) {
+  .navbar-brand {
+    font-size: 1.05rem
+  }
+
+  .card {
+    padding: 0.75rem
+  }
+
+  .hero .btn {
+    width: 100%
+  }
+}
+
+
+/* fin de estilos */
