@@ -3,7 +3,7 @@
 
 ###
 
-<p align="left">My name is ... and I'm a ..., from ....</p>
+<p align="left">My name is Oclivar and I'm a developer, from html y css</p>
 
 ###
 
@@ -38,4 +38,5 @@
 </div>
 
 ###
+
 
