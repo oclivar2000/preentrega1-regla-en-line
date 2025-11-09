@@ -3,7 +3,7 @@
 
 ###
 
-<p align="left">My name is Oclivar and I'm a developer, from html y css</p>
+<p align="left">My name is Oclivar and I'm a developer, from html, css y Javascript</p>
 
 ###
 
@@ -38,5 +38,6 @@
 </div>
 
 ###
+
 
 
